@@ -52,3 +52,27 @@ function fixedNav() {
   }
 }
 window.addEventListener('scroll', fixedNav)
+
+
+let swiper = new Swiper(".popular__slider", {
+  slidesPerView: 1,
+  spaceBetween: 2,
+  navigation: {
+    nextEl: ".popular__slider-next",
+    prevEl: ".popular__slider-prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 2,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 2,
+    },
+  },
+});

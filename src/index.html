@@ -8,21 +8,33 @@
   <meta name="theme-color" content="#212126">
   <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.ico">
   <title>CS.MONEY — Trading Bot for fast CS:GO skins trade</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body class="main__body">
   <!-- Header -->
-  @@include('./html/_header.html')
+  @@include('./html/_header-main.html')
 
   <!-- Main Page -->
-  <main></main>
+  <main>
+    @@include('./html/_hero.html')
+    @@include('./html/_trade.html')
+    @@include('./html/_popular.html')
+    @@include('./html/_store.html')
+    @@include('./html/_get.html')
+    @@include('./html/_trusted.html')
+
+  </main>
 
   <!-- Footer -->
   @@include('./html/_footer.html')
 
 </body>
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>

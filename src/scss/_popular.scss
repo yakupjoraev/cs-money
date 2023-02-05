@@ -1,0 +1,238 @@
+.popular {
+  margin-bottom: 200px;
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 100px;
+  }
+
+  // .popular__inner
+
+  &__inner {}
+
+  // .popular__header
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media (max-width: $breakpoint768) {
+      flex-direction: column;
+      align-items: flex-start;
+      row-gap: 20px;
+    }
+  }
+
+  // .popular__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--text-color);
+
+    @media (max-width: $breakpoint768) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  // .popular__title-logo
+
+  &__title-logo {
+    width: 30px;
+  }
+
+  // .popular__link
+
+  &__link {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 120%;
+    color: var(--second-color-hover);
+    text-transform: uppercase;
+  }
+
+  // .popular__slider
+
+  &__slider {
+    position: relative;
+  }
+
+  // .popular__slider-wrapper
+
+  &__slider-wrapper {
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  // .popular__slide
+
+  &__slide {
+    position: relative;
+    width: 205px !important;
+    padding: 8px 10px 5px;
+    background-color: var(--background-card-color);
+
+    &:hover {
+      background-color: var(--background-card-color-hover);
+    }
+
+    &:hover .popular__slide-show {
+      bottom: -42px;
+      opacity: 1;
+    }
+
+    @media (max-width: $breakpoint768) {
+      width: 168px !important;
+    }
+  }
+
+  // .popular__slide-img
+
+  &__slide-img {
+    margin-bottom: 5px;
+    max-width: 100%;
+  }
+
+  // .popular__slide-descs
+
+  &__slide-descs {}
+
+  // .popular__slide-descr
+
+  &__slide-descr {
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--text-color-2);
+    text-overflow: ellipsis;
+
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      color: #fff;
+      white-space: nowrap;
+    }
+  }
+
+  // .popular__slide-show
+
+  &__slide-show {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 5px;
+    padding: 10px 8px;
+    border-radius: 0 0 4px 4px;
+    background-color: var(--second-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 120%;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+
+    &:hover {
+      background-color: var(--second-color-hover);
+    }
+
+
+    @media (max-width: $breakpoint768) {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  // .popular__slider-next
+
+  &__slider-next {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+
+    svg {
+      width: 30px;
+      height: 20px;
+    }
+
+    svg path {
+      fill: #c0c0c2;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: 0;
+      height: 100%;
+      width: 100px;
+      background: linear-gradient(90deg, #212126 24.49%, rgba(33, 33, 38, 0));
+      transform: rotate(180deg);
+      z-index: -1;
+    }
+  }
+
+  // .popular__slider-prev
+
+  &__slider-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    transform: translateY(-50%) rotate(180deg);
+    width: 100px;
+    height: 100%;
+    z-index: 2;
+    cursor: pointer;
+
+    &.swiper-button-disabled {
+      display: none;
+    }
+
+    svg {
+
+      width: 30px;
+      height: 20px;
+      z-index: 2;
+    }
+
+    svg path {
+      fill: #c0c0c2;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 0;
+      height: 100%;
+      width: 100px;
+      background: linear-gradient(90deg, #212126 24.49%, rgba(33, 33, 38, 0));
+      transform: rotate(180deg);
+      z-index: -1;
+    }
+  }
+}
