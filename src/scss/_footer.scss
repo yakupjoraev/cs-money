@@ -1,5 +1,7 @@
 // Footer
 .footer {
+  padding: 10px 0;
+
   @media (max-width: $breakpoint992) {
     display: none;
   }
