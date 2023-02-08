@@ -114,6 +114,13 @@ market()
 // function for free skins
 
 function randomBlocks() {
+
+  const sectionContainer = document.querySelector('.skin-free')
+
+  if (!sectionContainer) {
+    return null
+  }
+
   let skins = [
     {
       rang: "blue",
@@ -525,39 +532,10 @@ function randomBlocks() {
 
   }, 2000);
 
-
-  // let i = 0
-  // getBlock(skins[i])
-
-  // if (i < skins.length) {
-  //   i++
-  // }
-  // for (let i = 0; i < skins.length; i++) {
-  //   // getBlock(skins[i])
-
-  //   setTimeout(() => {
-  //     getBlock(skins[i++], skins[i])
-  //   }, 1000);
-  // }
-
-  // console.log(skins.length);
-  // console.log(getBlock);
-  // getBlock(skins.find())
-
-  // setTimeout(() => {
-  //   let num = skins[0].length + 1
-
-  //   getBlock(skins[0]) + num
-  // }, 1000);
-
-  // let getRandomNum = function () {
-  //   getBlock(((Math.random(skins[i]) * 48) + 1));
-  //   setTimeout(getRandomNum, 1000);
-  // }
-  // getRandomNum();
-
-
-
 }
 
-randomBlocks() 
+randomBlocks()
+
+// вызов модалки
+
+const modal = new GraphModal();

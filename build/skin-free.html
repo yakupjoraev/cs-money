@@ -10,6 +10,7 @@
   <title>CS.MONEY — Trading Bot for fast CS:GO skins trade</title>
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/graph-modal.min.css">
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
@@ -29,7 +30,7 @@
       </div>
       <ul class="menu">
         <li class="menu__item-mobile menu__item-mobile--header">
-          <a href="#" class="menu__item-link" data-scroll>
+          <a href="#" data-graph-path="steam-modal" class="menu__item-link" data-scroll>
             <img class="logo__img--mobile" src="./img/main-logo.svg" alt="logo">
 
             <div class="menu__item-mobile-sign">
@@ -51,10 +52,10 @@
             MARKET
           </a>
 
-          <a class="menu__item-link--mobile" href="#">Buy</a>
-          <a class="menu__item-link--mobile" href="#">Sell</a>
-          <a class="menu__item-link--mobile" href="#">History</a>
-          <a class="menu__item-link--mobile" href="#">Cashout</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">Buy</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">Sell</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">History</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">Cashout</a>
         </li>
 
         <li class="menu__item">
@@ -63,10 +64,10 @@
           </a>
 
           <a class="menu__item-link--mobile" href="trade.html">Trade</a>
-          <a class="menu__item-link--mobile" href="#">Sell</a>
-          <a class="menu__item-link--mobile" href="#">History</a>
-          <a class="menu__item-link--mobile" href="#">Auction</a>
-          <a class="menu__item-link--mobile" href="#">Prime</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">Sell</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">History</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">Auction</a>
+          <a class="menu__item-link--mobile" href="#" data-graph-path="steam-modal">Prime</a>
           <a class="menu__item-link--mobile" href="skin-free.html">
             Free skins
 
@@ -315,7 +316,7 @@
 
       <ul class="menu-right">
         <li class="menu__item">
-          <a href="#" class="menu__item-link menu__item-link--question" data-scroll>
+          <a href="#" data-graph-path="steam-modal" class="menu__item-link menu__item-link--question" data-scroll>
             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="csm_ui__size_24__2e8eb"
               aria-label="question outline">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -336,7 +337,7 @@
         </li>
 
         <li class="menu__item">
-          <a href="#" class="menu__item-link menu__item-link--language" data-scroll>
+          <a href="#" data-graph-path="steam-modal" class="menu__item-link menu__item-link--language" data-scroll>
             <img class="menu__item-link-img" src="./img/en.svg" alt="english">
 
             <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -349,7 +350,7 @@
         </li>
 
         <li class="menu__item">
-          <a href="#" class="menu__item-link menu__item-link--money" data-scroll>
+          <a href="#" data-graph-path="steam-modal" class="menu__item-link menu__item-link--money" data-scroll>
             $ USD
 
             <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -362,7 +363,7 @@
         </li>
 
         <li class="menu__item">
-          <a href="#" class="menu__item-link menu__item-link--sign" data-scroll>
+          <a href="#" data-graph-path="steam-modal" class="menu__item-link menu__item-link--sign" data-scroll>
             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="csm_ui__size_20__2e8eb"
               aria-label="social steam">
               <path
@@ -392,7 +393,7 @@
           <img class="skin-free__box-img" src="./img/free-skins/untitled.png" alt="box">
         </div>
 
-        <a class="skin-free__join-link" href="#">JOIN</a>
+        <a class="skin-free__join-link" href="#" data-graph-path="steam-modal">JOIN</a>
       </div>
 
       <div class="skin-free__winnings">
@@ -477,6 +478,32 @@
     </div>
   </div>
 </section>
+    <div class="graph-modal">
+  <div class="graph-modal__container" role="dialog" aria-modal="true" data-graph-target="steam-modal">
+    <button class="btn-reset graph-modal__close js-modal-close" aria-label="Закрыть модальное окно"></button>
+    <div class="graph-modal__content">
+      <div class="steam-modal">
+        <div class="steam-modal__icon">
+          <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" aria-label="social steam">
+            <path
+              d="M17.548 7.942c-.049.687-.694 1.434-1.57 1.374-.687-.047-1.391-.712-1.325-1.57.049-.639.645-1.385 1.521-1.326.876.06 1.424.835 1.374 1.522zm-1.521 2.797l-2.602 1.914c0 .147-.032.324-.049.393-.351 1.422-1.374 1.767-2.012 1.767-1.08-.05-1.816-.639-2.11-1.668L4.51 11.184c-.394.253-.89.355-1.397.32-.964-.066-1.985-.973-1.839-2.354.106-1.004 1.063-1.866 2.124-1.794 1.06.073 1.764.794 1.927 1.61l4.812 1.97c.393-.245.638-.343 1.227-.343l1.867-2.7c.001-.041-.005-.212 0-.292.106-1.54 1.47-2.702 3.048-2.594a2.871 2.871 0 012.693 2.984c-.05 1.62-1.424 2.798-2.945 2.748zM4.767 8.733c-.236-.487-.676-.854-1.37-.9-.657-.046-1.522.43-1.642 1.317a1.628 1.628 0 001.358 1.838c.159.026.48.035.838-.06l-1.182-.49c-.473-.24-.611-.802-.344-1.471.361-.563.92-.91 1.807-.45l.534.216zm9.444-1.028c-.081 1.197.811 1.991 1.718 2.053.883.06 2.029-.57 2.11-1.767.05-.932-.59-1.978-1.816-2.061-1.276-.05-2.012.981-2.012 1.775zM12.886 12.9c.134-.98-.718-1.816-1.522-1.816-.13-.01-.441 0-.638.098l1.151.458c.578.355.714 1.112.393 1.66a1.248 1.248 0 01-1.7.378l-.727-.288c.294.59 1.008.933 1.521.933.513 0 1.371-.327 1.522-1.423z">
+            </path>
+          </svg>
+        </div>
+
+        <h3 class="steam-modal__title">
+          Sign in via Steam
+        </h3>
+
+        <p class="steam-modal__descr">
+          Steam authorization is required to use the website
+        </p>
+
+        <a class="steam-modal__link" href="#" data-graph-path="steam-modal">SIGN IN</a>
+      </div>
+    </div>
+  </div>
+</div>
   </main>
 
   <!-- Footer -->
@@ -484,50 +511,63 @@
   <div class="container">
     <div class="footer__inner">
       <div class="footer__top">
-        <a class="footer__logo" href="#">
+        <a class="footer__logo" href="#" data-graph-path="steam-modal">
           <img class="footer__logo-img" src="./img/main-logo.svg" alt="">
         </a>
 
         <ul class="footer__list">
           <li class="footer__item">Trade</li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Trade</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Sell</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Auction</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">History</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Prime</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Trade</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Sell</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Auction</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">History</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Prime</a></li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">Market</li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Buy</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Sell</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Cashout</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">History</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Buy</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Sell</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Cashout</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">History</a></li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">Additional</li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Personal area</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">FAQ</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Visual settings</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Item status</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Trade bots</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Personal area</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">FAQ</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Visual
+              settings</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Item status</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Trade bots</a>
+          </li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">Terms</li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Privacy policy</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Terms of use</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Subscription terms</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Price policy</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Cookie policy</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Bug bounty</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Privacy
+              policy</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Terms of use</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Subscription
+              terms</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Price policy</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Cookie policy</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Bug bounty</a>
+          </li>
         </ul>
         <ul class="footer__list">
           <li class="footer__item">Our projects</li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Mobile app</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">DOTA.MONEY</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">WIKI</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">3D Skin Viewer</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Antiscam</a></li>
-          <li class="footer__item"><a class="footer__item-link" href="#">Blog</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Mobile app</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">DOTA.MONEY</a>
+          </li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">WIKI</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">3D Skin
+              Viewer</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Antiscam</a></li>
+          <li class="footer__item"><a class="footer__item-link" href="#" data-graph-path="steam-modal">Blog</a></li>
         </ul>
 
         <div class="footer__apps">
@@ -535,7 +575,7 @@
             Mobile app
           </h6>
 
-          <a href="#" class="footer__app">
+          <a href="#" data-graph-path="steam-modal" class="footer__app">
             <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M17 12.971a8.843 8.843 0 01-1.187 2.336c-.47.66-.854 1.115-1.151 1.368-.46.415-.952.628-1.48.64-.379 0-.834-.106-1.366-.32-.533-.214-1.023-.32-1.471-.32-.47 0-.974.106-1.513.32-.54.214-.975.327-1.307.337-.506.021-1.01-.197-1.513-.657-.321-.275-.723-.747-1.204-1.415-.516-.714-.94-1.542-1.273-2.486C3.178 11.754 3 10.768 3 9.812c0-1.094.24-2.039.723-2.83a4.203 4.203 0 011.514-1.505 4.126 4.126 0 012.046-.567c.402 0 .928.122 1.583.362.653.24 1.072.363 1.256.363.137 0 .603-.143 1.392-.428.746-.264 1.376-.373 1.892-.33 1.399.111 2.449.653 3.148 1.629-1.25.745-1.87 1.788-1.857 3.126.011 1.042.396 1.91 1.152 2.598.343.32.726.566 1.151.741zM13.482 1c.012.11.017.218.017.327 0 .817-.304 1.58-.908 2.285-.73.84-1.614 1.325-2.573 1.248A2.483 2.483 0 0110 4.55c0-.784.348-1.623.964-2.31.308-.347.7-.636 1.175-.866.474-.227.923-.353 1.345-.374z">
@@ -553,7 +593,7 @@
             </div>
           </a>
 
-          <a href="#" class="footer__app">
+          <a href="#" data-graph-path="steam-modal" class="footer__app">
             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M26.631 24.7926C29.8722 22.7652 32.3294 21.2203 32.5412 21.1003C33.2187 20.6898 33.9183 19.6034 32.5412 18.7596C32.0965 18.4943 29.7025 16.9974 26.631 15.0673L22.373 19.9659L26.631 24.7926Z"
@@ -588,7 +628,7 @@
             Extensions
           </h6>
 
-          <a href="#" class="footer__app">
+          <a href="#" data-graph-path="steam-modal" class="footer__app">
             <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_36_3746)">
                 <circle cx="19.5" cy="19" r="19" fill="#FF3EC6" />
@@ -615,7 +655,7 @@
             </div>
           </a>
 
-          <a href="#" class="footer__app">
+          <a href="#" data-graph-path="steam-modal" class="footer__app">
             <svg width="37" height="36" viewBox="0 0 37 36" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_268_3203)">
                 <circle cx="18.5" cy="18" r="18" fill="#193FF7" />
@@ -646,7 +686,7 @@
       </div>
 
       <div class="footer__middle">
-        <a href="#" class="footer__middle-left">
+        <a href="#" data-graph-path="steam-modal" class="footer__middle-left">
           <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M15.4648 14.4715C15.0527 15.1286 15.0573 15.794 15.6125 16.3492L15.6094 16.3492C15.963 16.7028 16.5252 16.7703 16.9493 16.8146C16.9902 16.8188 17.0219 16.8209 17.0513 16.8228C17.0986 16.8259 17.1399 16.8285 17.2038 16.8393C17.3962 16.8708 17.4965 16.9551 17.5634 17.0114C17.6902 17.1182 17.6972 17.124 17.9845 16.4773C18.056 16.3159 18.1625 16.1256 18.2655 15.9636C18.3862 15.7747 18.4922 15.6222 18.6253 15.4488C19.0621 14.8753 19.0486 14.8144 18.9308 14.2828C18.9068 14.1746 18.8785 14.0469 18.8488 13.8915C18.6381 12.787 18.3865 11.9003 17.9269 10.8183C17.7123 10.3101 17.0953 9.125 16.6936 8.7233C16.6577 8.6874 16.5686 8.66014 16.4468 8.6229C16.0005 8.48639 15.1156 8.21577 14.8069 6.89404C14.8003 6.8666 14.7939 6.84112 14.7879 6.81657C14.7696 6.74295 14.7534 6.67771 14.7357 6.59303C14.6761 6.31669 14.6846 6.25955 14.6655 6.214C14.6492 6.17502 14.6126 6.14453 14.4958 5.9924C14.4826 5.97527 14.4699 5.95862 14.4576 5.94251C14.3104 5.74941 14.2217 5.63308 14.0221 5.67513C13.9808 5.743 13.9646 5.80796 13.9471 5.87796C13.9339 5.93071 13.92 5.98632 13.8941 6.04821C13.5189 6.94229 12.8027 6.5884 12.6645 6.52012C12.6515 6.51371 12.6436 6.50982 12.6416 6.50971C12.4105 6.49885 12.4093 6.69865 12.5256 6.92664C13.0228 7.90585 12.7318 8.56912 11.8572 9.44366C11.9629 9.75674 12.1102 9.68072 12.3654 9.54651C12.89 9.27314 13.6225 9.08967 14.1064 9.57354C14.4831 9.95028 14.4212 10.3837 14.3811 10.664C14.362 10.7979 14.3478 10.8969 14.389 10.9381C14.4329 10.982 14.5029 11.0188 14.5854 11.0623C14.8435 11.1982 15.2245 11.3988 15.3148 12.0842C15.3362 12.2396 15.3225 12.6472 15.2451 12.7805C15.2965 12.8227 15.3622 12.8617 15.4298 12.9019C15.5279 12.9601 15.6303 13.0208 15.6999 13.098C15.926 13.3496 15.9436 13.7694 15.8408 14.0241C15.8064 14.1095 15.7074 14.2093 15.6171 14.3003C15.5534 14.3645 15.4941 14.4243 15.4648 14.4715ZM16.5421 16.1393C15.9071 16.1232 15.1517 15.62 15.8874 14.8833C15.8876 14.8831 15.8872 14.8835 15.8874 14.8833C16.3299 14.4417 17.4513 14.2813 17.8621 14.6921C18.6422 15.4722 17.2749 16.1571 16.5421 16.1393Z"
@@ -796,6 +836,8 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="./js/graph-modal.min.js"></script>
+<script src="./js/jquery-3.6.3.min.js"></script>
 <script src="./js/scripts.min.js"></script>
 
 </html>
