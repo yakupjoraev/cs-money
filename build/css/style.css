@@ -3870,4 +3870,8 @@ main {
     padding-left: 10px;
     margin-right: 20px;
   }
+
+  .graph-modal__container {
+    width: 96%;
+  }
 }

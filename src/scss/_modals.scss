@@ -5,6 +5,10 @@
   &__container {
     width: 376px;
     padding: 0;
+
+    @media (max-width: $breakpoint480) {
+      width: 96%;
+    }
   }
 
   // .graph-modal__close
