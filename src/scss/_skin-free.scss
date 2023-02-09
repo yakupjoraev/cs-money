@@ -384,6 +384,7 @@
 
 .roller-inner {
   position: relative;
+  overflow: hidden;
 
   &::after {
     content: '';
@@ -407,7 +408,6 @@
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  overflow: hidden;
 }
 
 .roller__item {

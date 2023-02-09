@@ -2296,6 +2296,7 @@ main {
 
 .roller-inner {
   position: relative;
+  overflow: hidden;
 }
 
 .roller-inner::after {
@@ -2328,7 +2329,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   gap: 10px;
-  overflow: hidden;
 }
 
 .roller__item {
