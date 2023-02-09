@@ -224,3 +224,219 @@
   color: var(--skin-color);
   align-self: flex-end;
 }
+
+
+.skin-free__measure {
+  margin-bottom: 100px;
+}
+
+.measure {}
+
+.measure__title {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  columns: var(--text-color);
+}
+
+.measure__item {
+  position: relative;
+  z-index: 2;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 21.7rem;
+    height: 21.3rem;
+    background: var(--skin-color);
+    opacity: .75;
+    filter: blur(100px);
+    z-index: -1;
+  }
+}
+
+.measure__item-img {
+  display: flex;
+  justify-content: center;
+  max-width: 510px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.measure__item-info {}
+
+.measure__item-price {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  columns: var(--text-color);
+}
+
+.measure__item-name {
+  margin: 2rem 0;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  columns: var(--text-color);
+}
+
+.measure__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  column-gap: 5px;
+  width: 480px;
+  height: 60px;
+  padding: 10px 8px;
+  border-radius: 4px;
+  background-color: var(--second-color);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+
+  &:hover {
+    background-color: var(--second-color-hover);
+  }
+
+
+  @media (max-width: $breakpoint768) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.measure__roller {}
+
+.roller {
+  position: relative;
+
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: -10%;
+    height: 120%;
+    width: 150px;
+    background: linear-gradient(90deg, rgba(45, 45, 51, 1) 20%, rgba(255, 255, 255, 0) 100%);
+    z-index: 2;
+
+    @media (max-width: $breakpoint768) {
+      width: 50px;
+      top: -2.5%;
+      height: 105%;
+      border-radius: 10px;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: -10%;
+    height: 120%;
+    width: 150px;
+    background: linear-gradient(90deg, rgba(45, 45, 51, 1) 20%, rgba(255, 255, 255, 0) 100%);
+    transform: rotate(180deg);
+    z-index: 2;
+
+    @media (max-width: $breakpoint768) {
+      width: 50px;
+      top: -2.5%;
+      height: 105%;
+      border-radius: 10px;
+    }
+  }
+}
+
+.roller-inner {
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -10%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 120%;
+    border: none;
+    background: #FF159A;
+    box-shadow: 0px 0px 5px rgb(212 95 147 / 37%), 0px 0px 33px #d45f93;
+    border-radius: 16px;
+    z-index: 10;
+  }
+}
+
+.roller__list {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.roller__item {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-input);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--skin-color);
+}
+
+.roller__item-img {
+  max-width: 200px;
+  width: 200px;
+  max-height: 200px;
+  height: max-content;
+  box-shadow: inset 0px 0px 100px #212126;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.roller__item-info {}
+
+.roller__item-name {
+  max-width: 220px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--skin-color);
+  // white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -ms-line-clamp: 1;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  display: -webkit-box;
+  display: box;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  box-orient: vertical;
+}
+
+.roller__item-price {
+  display: inline-block;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-color);
+  white-space: nowrap;
+}

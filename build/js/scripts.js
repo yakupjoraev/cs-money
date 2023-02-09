@@ -125,330 +125,323 @@ function randomBlocks() {
   let skins = [
     {
       rang: "blue",
-      name: "AK-47",
-      price: "7.90$",
+      name: "AK-47 | Phantom Disruptor (FT)",
+      price: "$ 7.90",
       img: '1'
     },
 
     {
       rang: "blue-2",
-      name: "AK-47",
-      price: "10$",
+      name: "AK-47 | Phantom Disruptor (FT)",
+      price: "$ 7.90",
       img: '2'
     },
 
     {
       rang: "fiol",
-      name: "AK-47",
-      price: "12$",
+      name: "AK-47 | Redline (FT)",
+      price: "$ 12.86",
       img: '3'
     },
 
     {
       rang: "fiol",
-      name: "AK-47",
-      price: "12$",
-      img: '3'
-    },
-
-    {
-      rang: "orange",
-      name: "AK-47",
-      price: "15$",
+      name: "AK-47 | Point Disarray (MW)",
+      price: "$ 13.57",
       img: '4'
     },
 
     {
-      rang: "orange-2",
-      name: "AK-47",
-      price: "50$",
+      rang: "fiol",
+      name: "AK-47 | Frontside Misty (FT)",
+      price: "$ 14$",
       img: '5'
     },
 
     {
       rang: "orange-2",
-      name: "AK-47",
-      price: "60.89$",
+      name: "AK-47 | Nightwish (MW)",
+      price: "$ 52.63",
       img: '6'
     },
 
     {
       rang: "orange-2",
-      name: "AK-47",
-      price: "89.99$",
+      name: "AK-47 | Neon Rider (MW)",
+      price: "$ 59.66",
       img: '7'
     },
 
     {
       rang: "orange-2",
-      name: "AK-47",
-      price: "99.99$",
+      name: "AK-47 | Aquamarine Revenge (FN)",
+      price: "$ 81.58",
       img: '8'
     },
 
     {
       rang: "fiol",
-      name: "AUG",
-      price: "7.99$",
+      name: "AUG | Bengal Tiger (MW)",
+      price: "$ 7.36",
       img: '9'
     },
 
     {
       rang: "fiol",
-      name: "AWP",
-      price: "11.99$",
+      name: "AWP | Atheris (FN)",
+      price: "$ 11.90",
       img: '10'
     },
 
     {
       rang: "orange",
-      name: "AWP",
-      price: "65$",
+      name: "AWP | Chromatic Aberration (FN)",
+      price: "$ 65.26",
       img: '11'
     },
 
     {
       rang: "orange",
-      name: "AWP",
-      price: "75.35$",
+      name: "AWP | Hyper Beast (FN)",
+      price: "$ 76.49",
       img: '12'
     },
 
     {
       rang: "orange",
-      name: "AWP",
-      price: "95.95$",
+      name: "AWP | Asiimov (WW)",
+      price: "$ 84.21",
       img: '13'
     },
 
     {
       rang: "orange-2",
-      name: "Bloodhound Gloves",
-      price: "82.95$",
+      name: "★ Bloodhound Gloves | Bronzed (FT)",
+      price: "$ 82.46",
       img: '14'
     },
 
     {
       rang: "blue",
-      name: "CZ75-auto",
-      price: "8.90$",
+      name: "CZ75-Auto | Xiangliu (FN)",
+      price: "$ 8.90",
       img: '15'
     },
 
     {
       rang: "fiol",
-      name: "Desert Eagle",
-      price: "14.90$",
+      name: "Desert Eagle | Kumicho Dragon (FT)",
+      price: "$ 14.23",
       img: '16'
     },
 
     {
       rang: "orange-2",
-      name: "Driver Gloves",
-      price: "80$",
+      name: "★ Driver Gloves | Racing Green (MW)",
+      price: "$ 80.49",
       img: '17'
     },
 
     {
       rang: "orange-2",
-      name: "Dual Barettas",
-      price: "24.99$",
+      name: "Dual Berettas | Melondrama (FN)",
+      price: "$ 24.99",
       img: '18'
     },
 
     {
       rang: "blue",
-      name: "Fames",
-      price: "19$",
+      name: "StatTrak™ FAMAS | Pulse (FT)",
+      price: "$ 6.49",
       img: '19'
     },
 
     {
       rang: "blue",
-      name: "Five SeveN",
-      price: "10.99$",
+      name: "Five-SeveN | Monkey Business (MW)",
+      price: "$ 10.99",
       img: '20'
     },
 
     {
       rang: "fiol",
-      name: "Five SeveN",
-      price: "14.99$",
+      name: "Five-SeveN | Angry Mob (FN)",
+      price: "$ 12.42",
       img: '21'
     },
 
     {
       rang: "fiol",
-      name: "G3SG1",
-      price: "44.99$",
+      name: "G3SG1 | Flux (FN)",
+      price: "$ 20.10",
       img: '22'
     },
 
     {
       rang: "blue",
-      name: "Galil AR",
-      price: "9$",
+      name: "Galil AR | Rocket Pop (FT)",
+      price: "$ 9.10",
       img: '23'
     },
 
     {
-      rang: "blue",
-      name: "Glock-18",
-      price: "8.90$",
+      rang: "orange",
+      name: "Glock-18 | Neo-Noir (FN)",
+      price: "$ 8.90",
       img: '24'
     },
 
     {
       rang: "blue",
-      name: "Glock-18",
-      price: "9.90$",
+      name: "StatTrak™ Glock-18 | Water Elemental (BS)",
+      price: "$ 9.22",
       img: '25'
     },
 
     {
-      rang: "blue",
-      name: "Glock-18",
-      price: "11.90$",
+      rang: "fiol",
+      name: "Glock-18 | Vogue (FN)",
+      price: "$ 11.08",
       img: '26'
     },
 
     {
-      rang: "fiol",
-      name: "Glock-18",
-      price: "16.90$",
+      rang: "orange",
+      name: "Glock-18 | Neo-Noir (FT)",
+      price: "$ 14.66",
       img: '27'
     },
 
     {
       rang: "orange",
-      name: "Glock-18",
-      price: "66.90$",
+      name: "StatTrak™ Glock-18 | Wasteland Rebel (FN)",
+      price: "$ 57.46",
       img: '28'
     },
 
     {
       rang: "orange-2",
-      name: "Huntsman Knife",
-      price: "96.40$",
+      name: "★ StatTrak™ Huntsman Knife | Ultraviolet (FT)",
+      price: "$ 99.46",
       img: '29'
     },
 
     {
       rang: "fiol",
-      name: "M4A1-S",
-      price: "8.40$",
+      name: "M4A1-S | Leaded Glass (FT)",
+      price: "$ 7.27",
       img: '30'
     },
 
     {
       rang: "fiol",
-      name: "M4A1-S",
-      price: "10.60$",
+      name: "M4A1-S | Nightmare(FT)",
+      price: "$ 8.37",
       img: '31'
     },
 
     {
       rang: "fiol",
-      name: "M4A1-S",
-      price: "15.60$",
+      name: "M4A1-S | Player Two (BS)",
+      price: "$ 22.35",
       img: '32'
     },
 
     {
       rang: "orange",
-      name: "M4A1-S",
-      price: "65.60$",
+      name: "M4A1-S | Hyper Beast (WW)",
+      price: "$ 54.17",
       img: '33'
     },
 
     {
       rang: "blue",
-      name: "M4A1",
-      price: "6.60$",
+      name: "M4A4 | Desolate Space (FT)",
+      price: "$ 7.95",
       img: '34'
     },
 
     {
       rang: "orange-2",
-      name: "M4A1",
-      price: "64.60$",
+      name: "M4A4 | The Emperor (MW)",
+      price: "$ 69.49",
       img: '35'
     },
 
     {
       rang: "blue",
-      name: "MAC-10",
-      price: "6.60$",
+      name: "StatTrak™ MAC-10 | Disco Tech (FT)",
+      price: "$ 5.96",
       img: '36'
     },
 
     {
       rang: "orange-2",
-      name: "MAC-10",
-      price: "59.90$",
+      name: "MAC-10 | Stalker (FT)",
+      price: "$ 39.8",
       img: '37'
     },
 
     {
       rang: "orange-2",
-      name: "Moto Gloves",
-      price: "99.90$",
+      name: "★ Moto Gloves | Turtle (BS)",
+      price: "$ 88.50",
       img: '38'
     },
 
     {
       rang: "blue",
-      name: "MP5-SD",
+      name: "Sawed-Off | Kiss♥Love (FT)",
       price: "9.10$",
       img: '39'
     },
 
     {
       rang: "blue",
-      name: "MP7",
-      price: "9.08$",
+      name: "MP7 | Nemesis (FT)",
+      price: "$ 9.08",
       img: '40'
     },
 
     {
-      rang: "orange-2",
-      name: "MP7",
-      price: "95.08$",
+      rang: "blue",
+      name: "StatTrak™ P90 | Desert Warfare (FN)",
+      price: "$ 9.67",
       img: '41'
     },
 
     {
       rang: "blue",
-      name: "P90",
-      price: "8.88$",
+      name: "P90 | Trigon (FT)",
+      price: "$ 8.88",
       img: '42'
     },
 
     {
       rang: "blue",
-      name: "P2000",
-      price: "7.68$",
+      name: "P2000 | Fire Elemental (FT)",
+      price: "$ 7.34",
       img: '43'
     },
 
     {
       rang: "blue",
-      name: "PP-Bizon",
-      price: "6.68$",
+      name: "PP-Bizon | Judgement of Anubis (FT)",
+      price: "$ 6.55",
       img: '44'
     },
 
     {
       rang: "blue",
-      name: "R8 Revolver",
-      price: "7.88$",
+      name: "R8 Revolver | Fade (MW)",
+      price: "$ 7.25",
       img: '45'
     },
 
     {
       rang: "blue",
-      name: "Saved Off",
-      price: "8.98$",
+      name: "MP5-SD | Phosphor (FN)",
+      price: "$ 8.50",
       img: '46'
     },
 
@@ -497,22 +490,6 @@ function randomBlocks() {
 
     skinsContainer.insertAdjacentHTML(`afterBegin`, skinBlock)
 
-    // skinsContainer.innerHTML +=
-    //   ` 
-    //   <li class="skin-free__item ${skin.rang}">
-    //     <img class="skin-free__item-img" src="./img/free-skins/${skin.img}.png" alt="${skin.img}">
-
-    //     <div class="skin-free__item-info">
-    //       <h3 class="skin-free__item-name">
-    //           ${skin.name}
-    //       </h3>
-
-    //       <p class="skin-free__item-price">
-    //           ${skin.price}
-    //       </p>
-    //     </div>
-    //   </li>
-    // `
   }
 
   let counter = 0
@@ -540,3 +517,7 @@ randomBlocks()
 // вызов модалки
 
 const modal = new GraphModal();
+
+
+
+
