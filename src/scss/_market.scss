@@ -1,6 +1,10 @@
 .market {
   margin-bottom: 100px;
 
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 0;
+  }
+
   // .market__inner
 
   &__inner {

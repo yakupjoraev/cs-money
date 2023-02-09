@@ -3797,6 +3797,10 @@ main {
     right: 0;
   }
 
+  .market {
+    margin-bottom: 0;
+  }
+
   .market__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
