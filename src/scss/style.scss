@@ -19,3 +19,18 @@
 
 // Libs
 // @import './libs/swiper';
+
+
+.last {}
+
+.last__title {
+  min-height: 100vh;
+  max-width: 660px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+  color: var(--text-color);
+}
