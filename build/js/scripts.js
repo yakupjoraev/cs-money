@@ -520,4 +520,15 @@ const modal = new GraphModal();
 
 
 
+// let link = '';
+
+// document.addEventListener('click', function (e) {
+//   if (e.target.classList.contains('goAuth') || e.path[2].classList.contains('goAuth') || e.path[1].classList.contains('goAuth') || e.path[3].classList.contains('goAuth')) {
+//     let wind = window.open("", "", "STATUS=NO, TOOLBAR=NO, LOCATION=0, DIRECTORIES=0, RESISABLE=NO, SCROLLBARS=YES, TOP=50, LEFT=50, WIDTH=1004, HEIGHT=800"); wind.document.write(`<html style='overflow:hidden;'><head><title>Steam Community</title><style>html, body {width:1004px; height:800px; margin:0px; padding:0px;}</style></head><body><iframe src='${link}' border='0' style='width:100vw; height:100vh; border: none;'></iframe></body></html>`);
+//     wind.addEventListener('beforeunload', (event) => {
+//       window.location.reload();
+//     });
+//     return false;
+//   }
+// });
 
