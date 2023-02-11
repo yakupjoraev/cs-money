@@ -34,3 +34,53 @@
   font-size: 24px;
   color: var(--text-color);
 }
+
+.success__inner {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.success__title {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.success__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+  width: 120px;
+  height: 40px;
+  padding: 10px 8px;
+  border-radius: 4px;
+  background-color: var(--second-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+
+
+  &:hover {
+    background-color: var(--second-color-hover);
+  }
+
+
+  @media (max-width: $breakpoint992) {
+    max-width: 100%;
+    width: 100%;
+  }
+}
